@@ -1,0 +1,7 @@
+{
+    "url": "https://github.com/peti/nixpkgs",
+    "rev": "07e8402ed40206a45d058a227d346a757949c5ee",
+    "sha256": "1whygxmwi9n8424q30hq3vfkjwpmv2acl0rjlv5g0v4dda5b9ixn",
+    "date": "2018-06-19T18:14:00+02:00",
+    "fetchSubmodules": true
+}

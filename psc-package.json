@@ -1,0 +1,10 @@
+{
+  "name": "nix-purescript-example-project",
+  "set": "psc-0.12.0",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "psci-support",
+    "console",
+    "prelude"
+  ]
+}
