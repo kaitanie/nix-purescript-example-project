@@ -1,15 +1,18 @@
 { pkgs ? import ./pkgs.nix }:
 
-pkgs.stdenv.mkDerivation {
+let nodejs = pkgs.nodejs-10_x;
+    nodePackages = pkgs.nodePackages.override { inherit nodejs; };
+    yarn = pkgs.yarn.override { inherit nodejs; };
+in pkgs.stdenv.mkDerivation {
   name = "hello-purescript";
   src = ./.;
   buildInputs = [
     pkgs.purescript
     pkgs.psc-package
-    pkgs.nodePackages.bower
+    nodePackages.bower
 #    pkgs.nodePackages.pulp
-    pkgs.nodePackages.yarn
-    pkgs.nodejs-10_x
+    yarn
+    nodejs
   ];
   buildPhase = ''
   '';
